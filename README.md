@@ -3,8 +3,17 @@ Developed NodeJs application which helps to shorten the URL and we can redirect 
 
 Postman Data:
 Post request: 
-url:http://localhost:8001/url
-body: 
+url to hit Post request:http://localhost:8001/url
+pass json body: 
 {
     "url":"https://www.google.com/"
 }
+Output: 
+{
+    "id": "ZC47oku1u"
+}
+
+Get request:
+http://localhost:8001/url/ZC47oku1u
+
+Output: http://localhost:8001/url/ZC47oku1u redirecting to "https://www.google.com/"
